@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background: #3f3123;
+    margin: 0px;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 5rem;
+    background: rgb(194, 144, 98);
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    padding-inline: 2rem;
+    z-index: 999;
+}
+
+h2,
+h5,
+font,
+subTitle,
+nameText,
+a {
+    font-family: Oswald;
+    margin: 0px;
+}
+
+subTitle {
+    font-size: 18pt;
+    margin: 0px;
+    color: #eee;
+    /*filter: drop-shadow(0px 3px 0px #000a);*/
+}
+
+h2 {
+    font-size: 28pt;
+    margin: 0px;
+    color: #eee;
+    filter: drop-shadow(4px 4px 0px #000a);
+}
+
+header>a {
+    font-size: 14pt;
+    margin: 0px;
+    color: #eee;
+    filter: drop-shadow(0px 3px 0px #000a);
+    text-decoration-line: none;
+}
+
+header>a:hover {
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+
+nav {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    /* padding-block: 2rem; */
+    flex-direction: column;
+}
+
+#cap {
+    background: url(img/classroomBg.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    contain: layout;
+    flex-direction: column;
+}
+
+#cap>h2 {
+    color: #fff;
+}
+
+#cap>font {
+    color: #fff;
+    backdrop-filter: brightness(0.5);
+    width: 50%;
+    min-height: 25%;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+#cap>p {
+    display: block;
+    backdrop-filter: blur(0.2rem) brightness(0.35) contrast(1.25);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+nav>div {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#DIValunos,
+#DIVprof {
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffa78f33;
+}
+
+footer>* {
+    color: #eee;
+}
+
+footer>*>a {
+    color: #e7ff58;
+}
+
+@media screen and (max-width:550px) {
+    #cap>font {
+        width: 100%
+    }
+#DIValunos>input:checked+label {
+    min-width: 100%;
+}
